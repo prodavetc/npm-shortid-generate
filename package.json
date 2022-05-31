@@ -1,0 +1,12 @@
+{
+  "name": "npm-shortid-generate",
+  "version": "1.0.1",
+  "description": "short code generator",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["shortID", "uuid", "short", "random", "unique", "randomstring", "random-string", "random", "generator"],
+  "author": "prodavetc@gmail.com",
+  "license": "ISC"
+}
