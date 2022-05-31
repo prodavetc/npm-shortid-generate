@@ -2,4 +2,4 @@
 
 ## Short code generator
 
-## genValues(str, num, 4, true)
+for use call genValues(str, num, 4, true)
