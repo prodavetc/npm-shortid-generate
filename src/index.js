@@ -1,27 +1,24 @@
-
 const getCaracter = c => {
-    return c.charAt(Math.floor(Math.random() * c.length));
+    const char = c.charAt(Math.floor(Math.random() * c.length));
+    if(Math.round(Math.random())) return char.toUpperCase()
+    return char
 }
 
 const genValues = (quantity, upper=false, alternation = false) => {
-    let str ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    let num = '0123456789';
+    let str ='abcdefghijklmnopqrstuvwxyz';
+    let num = 'abcdefghijklmnopqrstuvwxyz0123456789';
     let result = ''
-  	let up = (upper) ? getCaracter(str).toUpperCase() : getCaracter(str)
     
     for (let i = 1; i <= quantity; i++){
         if(alternation){
-            if(i % 2  == 0){
-                result += getCaracter(num)
-            }else{
-                
-                result += (up)
+            if(i % 2  === 0){
+                result += Math.floor(Math.random() * 10)
+            }else{   
+                result += upper ? getCaracter(str).toUpperCase() : getCaracter(str)
             }
         }else{
-            let res = (up += num)
-            result += res.charAt(Math.floor(Math.random() * res.length));
+            result += upper ? getCaracter(str).toUpperCase() : getCaracter(num)
         }
-        
     }
   return result
 }
