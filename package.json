@@ -6,7 +6,25 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["shortID", "uuid", "short", "random", "unique", "randomstring", "random-string", "random", "generator"],
+  "keywords": [
+    "shortID",
+    "uuid",
+    "short",
+    "random",
+    "unique",
+    "randomstring",
+    "random-string",
+    "random",
+    "generator"
+  ],
   "author": "prodavetc@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prodavetc/npm-shortid-generate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prodavetc/npm-shortid-generate/issues"
+  },
+  "homepage": "https://github.com/prodavetc/npm-shortid-generate#readme"
 }
